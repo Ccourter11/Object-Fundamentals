@@ -106,6 +106,14 @@ console.log(Object.entries(tenAlbum));
 // .values()
 // .entries()
 
+const entry = Object.entries(tenAlbum);
+const value = Object.values(tenAlbum);
+const key = Object.keys(tenAlbum);
+
+for (const property in tenAlbum) {
+  console.log(`${Object.entries(tenAlbum)}`);
+}
+
 // ! ADD AND COMMIT
 
 // USING THE DATA FROM .setlists
