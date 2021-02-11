@@ -84,28 +84,50 @@ for (let item in tenAlbum) {
     etc.
 */
 
+for (const track of tenAlbum.tracks) {
+  console.log(`Title: ${track.title} - length: ${track.length}`);
+}
+
 // ! ADD AND COMMIT
 
 // OBJECT.keys() / .values() / .entries()
 // TODO: log the keys of the tenAlbum object using Object.keys()
+console.log(Object.keys(tenAlbum));
+console.log("Object.keys()", Object.keys(tenAlbum));
 
 // TODO: log the values of the tenAlbum object Object.values()
 
+console.log(Object.values(tenAlbum));
+console.log("Object.values()", Object.values(tenAlbum));
+
 // TODO: log the entries of the tenAlbum object Object.entries()
+console.log(Object.entries(tenAlbum));
+console.log("Object.entries()", Object.entries(tenAlbum));
 
 // TODO: iterate the tenAlbum object and log the key/value pairs to the console using each of the above Object methods:
 // .keys()
 // .values()
 // .entries()
 
+// for (let key of Object.keys(tenAlbum)) {
+//   console.log(key, tenAlbum[key]);
+// }
+
+for (const [key, value] of Object.entries(tenAlbum)) {
+  console.log(`Key: ${key} - Value: ${value}`);
+}
+
 // ! ADD AND COMMIT
 
 // USING THE DATA FROM .setlists
 import { setlistsFromAPI } from "./setlists.js";
 // TODO: Log 'setlistsFromAPI' to the console
+// const setList = setlistsFromAPI;
+// console.log(setList);
 
 // TODO: USING the 'setlistsFromAPI' data, find the event dated 18-08-2018 and store that event object in a variable named 'event'
-
+// const setList1+ = setlistsFromAPI;
+// console.log(setlist.eventDate);
 // TODO: log the 'event' object to the console
 
 // TODO: USING DOT OR BRACKET NOTATION AND STRING INTERPOLATION, create a string which includes the name of the band, the venue, and the date of the event and store it in a new variable clled "bandVenueDate"
