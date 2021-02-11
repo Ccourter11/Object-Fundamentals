@@ -122,8 +122,8 @@ for (const [key, value] of Object.entries(tenAlbum)) {
 // USING THE DATA FROM .setlists
 import { setlistsFromAPI } from "./setlists.js";
 // TODO: Log 'setlistsFromAPI' to the console
-// const setList = setlistsFromAPI;
-// console.log(setList);
+const event = setlistsFromAPI.setlist[3];
+console.log("event ", event);
 
 // TODO: USING the 'setlistsFromAPI' data, find the event dated 18-08-2018 and store that event object in a variable named 'event'
 // const setList1+ = setlistsFromAPI;
